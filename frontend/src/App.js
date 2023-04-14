@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path ='/' element={<Home/>}/>
-        <Route path ='/paymentSuccess' element={<PaymentSucess/>}/>
+        <Route exact path ='/paymentSuccess' element={<PaymentSucess/>}/>
       </Routes>
     </Router>
   );

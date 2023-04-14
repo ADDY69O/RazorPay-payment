@@ -36,7 +36,7 @@ import recipt from "../models/paymentSchema.js";
         }
         
      
-        res.redirect(`https://paymentinte.netlify.app/paymentSuccess?reference=${razorpay_payment_id}`)
+        res.redirect(`https://paymentinte.netlify.app`)
 
     }
     else{
