@@ -6,9 +6,9 @@ import axios from 'axios'
 function Home() {
   const checkoutHandler=async(amount)=>{
 
-    const {data:{key}}=await axios.get("http://localhost:8000/api/getKey");
+    const {data:{key}}=await axios.get("https://rr-h6xl.onrender.com/api/getKey");
 
-    const {data:{order}}  = await axios.post("http://localhost:8000/api/checkout",{
+    const {data:{order}}  = await axios.post("https://rr-h6xl.onrender.com/api/checkout",{
       amount
     })
 
@@ -21,10 +21,10 @@ const options = {
   amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
   currency: "INR",
   name: "ecommerce shop",
-  description: "tutorial for Transaction",
+  description: " Transaction for ordered item",
   image: "https://i.pinimg.com/736x/11/fc/fd/11fcfd187dd4949d4b8559f867d9af89.jpg",
   order_id:order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-  callback_url: "http://localhost:8000/api/verify",
+  callback_url: "https://rr-h6xl.onrender.com/api/verify",
   prefill: {
       name: "Gaurav Kumar",
       email: "gaurav.kumar@example.com",
