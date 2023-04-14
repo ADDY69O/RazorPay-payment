@@ -4,6 +4,6 @@ import { checkout, checkVerification } from "../controllers/PaymentControllers.j
 const router = express.Router();
 
 router.route('/checkout').post(checkout);
-router.route('/verify').get(checkVerification);
+router.route('/verify').post(checkVerification);
 
 export default router;

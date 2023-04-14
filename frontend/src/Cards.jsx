@@ -5,7 +5,7 @@ const Cards = ({amount,img,checkoutHandler}) => {
   return (
    <VStack  marginBlockEnd={"1.2rem"} boxSize={'64'} objectFit={'cover'}>
     <Image src={img}/>
-    <Text>{amount}</Text>
+    <Text>₹{amount}</Text>
     <Button onClick={()=> checkoutHandler(amount)}>Submit</Button>
    </VStack>
   )

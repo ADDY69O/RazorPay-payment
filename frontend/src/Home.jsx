@@ -50,7 +50,7 @@ const  razor = new window.Razorpay(options);
     
     <Box>
       <Stack h={'100vh'} alignItems={'center'} justifyContent={'center'} direction={["column","row"]}>
-        <Cards  amount={5000} img={"https://m.media-amazon.com/images/I/71eXNIDUGjL._SL1500_.jpg"}  checkoutHandler={checkoutHandler}/>
+        <Cards  amount={88000} img={"https://m.media-amazon.com/images/I/71eXNIDUGjL._SL1500_.jpg"}  checkoutHandler={checkoutHandler}/>
         <Cards amount={1800} img={"https://m.media-amazon.com/images/I/61ljxTBpTCL._SL1500_.jpg"}checkoutHandler={checkoutHandler} />
       </Stack>
 
